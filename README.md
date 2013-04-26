@@ -1,4 +1,4 @@
 GroupMembers
 ============
 
-Place holder readme.md file that will be updated with unstructions and stuff.
+Place holder readme.md file that will be updated with instructions and stuff.
