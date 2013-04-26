@@ -23,6 +23,7 @@
 		1A87C5E1172ACEE20014ABDB /* ECSecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A87C5E0172ACEE20014ABDB /* ECSecondViewController.m */; };
 		1A87C5E3172ACEE20014ABDB /* second.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A87C5E2172ACEE20014ABDB /* second.png */; };
 		1A87C5E5172ACEE20014ABDB /* second@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A87C5E4172ACEE20014ABDB /* second@2x.png */; };
+		1ABA9002172AEADE00F77414 /* Zumero.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1ABA9001172AEADE00F77414 /* Zumero.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,6 +49,7 @@
 		1A87C5E0172ACEE20014ABDB /* ECSecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ECSecondViewController.m; sourceTree = "<group>"; };
 		1A87C5E2172ACEE20014ABDB /* second.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = second.png; sourceTree = "<group>"; };
 		1A87C5E4172ACEE20014ABDB /* second@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "second@2x.png"; sourceTree = "<group>"; };
+		1ABA9001172AEADE00F77414 /* Zumero.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Zumero.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +60,7 @@
 				1A87C5BE172ACEE20014ABDB /* UIKit.framework in Frameworks */,
 				1A87C5C0172ACEE20014ABDB /* Foundation.framework in Frameworks */,
 				1A87C5C2172ACEE20014ABDB /* CoreGraphics.framework in Frameworks */,
+				1ABA9002172AEADE00F77414 /* Zumero.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -84,6 +87,7 @@
 		1A87C5BC172ACEE20014ABDB /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				1ABA9001172AEADE00F77414 /* Zumero.framework */,
 				1A87C5BD172ACEE20014ABDB /* UIKit.framework */,
 				1A87C5BF172ACEE20014ABDB /* Foundation.framework */,
 				1A87C5C1172ACEE20014ABDB /* CoreGraphics.framework */,
@@ -283,6 +287,10 @@
 		1A87C5E9172ACEE20014ABDB /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "GroupMembers/GroupMembers-Prefix.pch";
 				INFOPLIST_FILE = "GroupMembers/GroupMembers-Info.plist";
@@ -294,6 +302,10 @@
 		1A87C5EA172ACEE20014ABDB /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "GroupMembers/GroupMembers-Prefix.pch";
 				INFOPLIST_FILE = "GroupMembers/GroupMembers-Info.plist";
@@ -321,6 +333,7 @@
 				1A87C5EA172ACEE20014ABDB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
